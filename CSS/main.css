@@ -1,5 +1,5 @@
-body, html {
-  height: 100%;
+body {
+  height: 100vh;
 }
 
 body {
@@ -120,6 +120,12 @@ main section#primary h1 {
   }
 }
 
+@media (max-height: 600px) {
+  main section#primary h1 {
+    font-size: 2em;
+  }
+}
+
 main section#primary p {
   font-size: 1.4em;
 }
@@ -133,7 +139,7 @@ main section#primary a {
   background-color: #FFF6BB;
   display: block;
   text-align: center;
-  margin: 50px auto 0 auto;
+  margin: 5px auto 0 auto;
   padding: 15px;
 }
 

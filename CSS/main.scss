@@ -21,8 +21,8 @@ $desktop: 840px;
     }
 };
 
-body, html {
-    height: 100%;
+body {
+    height: 100vh;
 }
 
 body {
@@ -126,6 +126,10 @@ main {
                 font-size: 4em;
                 line-height: .9em;
             }
+
+            @media (max-height: 600px){
+                font-size: 2em;
+            }
         }
 
         p {
@@ -141,7 +145,7 @@ main {
             background-color: color(accent);
             display: block;
             text-align: center;
-            margin: 50px auto 0 auto;
+            margin: 5px auto 0 auto;
             padding: $padding;
 
             @include desktop{
